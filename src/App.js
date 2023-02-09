@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./comp/Navbar/Navbar";
+import Homepage from "./comp/Homepage/Homepage";
+import Techstack from "./comp/Techstack/Techstack";
+import Experience from "./comp/Experience/Experience";
+import copyrights from "./images/copyrights.png";
+import Projects from "./comp/Projects/Projects";
+import "./App.css";
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     
+      
+           <Navbar />
+           <img className="myimg" src="https://raw.githubusercontent.com/arunthe01/pic/main/world.png" />
+           <Homepage/>
+           <p className="tech-head"> TECH-STACK </p>
+           <Techstack/>
+           {/* <p className="exp-head"> Experience </p> */}
+           {/* {/* <Experience/> */}
+
+           <p className="tech-head"> PROJECTS </p>
+
+           <Projects/> 
+
+
+            
+
+              <div className="cpy">
+                 
+                  <img src ={copyrights} alt="copy-rights"/>
+                  <p> DESIGN BY ARUN EMMIDI</p>
+                 
+              </div>
+             
+          
+           
     </div>
   );
 }
